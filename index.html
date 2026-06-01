@@ -1,33 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rae John Carandang</title>
-    <style>
-        body{
-            font-family:Arial;
-            max-width:1000px;
-            margin:auto;
-            padding:20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        nav{
-            margin-bottom:20px;
-        }
+<title>Rae John Carandang | Portfolio</title>
 
-        nav a{
-            margin-right:15px;
-            text-decoration:none;
-        }
+<style>
 
-        .project{
-            border:1px solid #ddd;
-            padding:15px;
-            margin-top:15px;
-        }
-    </style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+nav{
+    background:white;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project img{
+    width:100%;
+    margin-top:15px;
+    border-radius:8px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+
+.skill-box{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+</style>
 </head>
 
 <body>
+
+<header>
+
+<!-- Upload profile.jpg -->
+
+<img src="profile.jpg" alt="Profile Picture">
 
 <h1>Rae John Carandang</h1>
 
@@ -35,85 +125,229 @@
 BSIT Graduate | Full-Stack Developer | AI Enthusiast
 </p>
 
+</header>
+
 <nav>
 <a href="#about">About</a>
+<a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#achievements">Achievements</a>
 <a href="#resume">Resume</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<hr>
-
 <section id="about">
+
 <h2>About Me</h2>
 
+<div class="card">
+
 <p>
-I am a Bachelor of Information Technology graduate with experience in software development, system design, and technical problem-solving. I enjoy building practical systems that improve productivity and efficiency.
+I am a Bachelor of Information Technology graduate with experience in software development, system design, troubleshooting, and technical problem-solving. I enjoy developing practical solutions that improve productivity and efficiency through modern technologies and software systems.
 </p>
+
+</div>
+
 </section>
 
-<hr>
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">HTML</div>
+<div class="skill-box">CSS</div>
+<div class="skill-box">JavaScript</div>
+<div class="skill-box">Python</div>
+<div class="skill-box">Java</div>
+<div class="skill-box">Git</div>
+<div class="skill-box">VS Code</div>
+<div class="skill-box">ChatGPT</div>
+<div class="skill-box">Claude</div>
+<div class="skill-box">Gemini</div>
+
+</div>
+
+</section>
 
 <section id="projects">
 
 <h2>Projects</h2>
 
-<div class="project">
+<div class="card project">
+
 <h3>OJT Portal System</h3>
+
 <p>
 Student tracking and submission management system developed for PUP Unisan.
 </p>
-</div>
 
-<div class="project">
-<h3>SparkSage AI Discord Bot</h3>
 <p>
-AI-powered Discord bot for automated assistance and intelligent responses.
+<b>Technologies:</b> HTML, CSS, JavaScript, PHP, MySQL
 </p>
+
+<img src="images/ojtportal.png" alt="OJT Portal">
+
+<a class="btn"
+href="https://github.com/yourusername/ojt-portal">
+View Source Code
+</a>
+
 </div>
 
-<div class="project">
+<div class="card project">
+
+<h3>SparkSage AI Discord Bot</h3>
+
+<p>
+AI-powered Discord bot for automated responses and intelligent assistance.
+</p>
+
+<p>
+<b>Technologies:</b> Python, Discord.py, AI APIs
+</p>
+
+<img src="images/sparksage.png" alt="SparkSage">
+
+<a class="btn"
+href="https://github.com/yourusername/sparksage">
+View Source Code
+</a>
+
+</div>
+
+<div class="card project">
+
 <h3>ScopeLock</h3>
+
 <p>
 Project and Scope Management System designed for freelancers and development teams.
 </p>
+
+<p>
+<b>Technologies:</b> HTML, CSS, JavaScript, PHP, MySQL
+</p>
+
+<img src="images/scopelock.png" alt="ScopeLock">
+
+<a class="btn"
+href="https://github.com/yourusername/scopelock">
+View Source Code
+</a>
+
 </div>
 
 </section>
 
-<hr>
+<section id="certifications">
 
-<section id="resume">
+<h2>Certifications</h2>
 
-<h2>Resume</h2>
+<div class="card">
 
-<p>
-Download my resume:
-</p>
+<ul>
+<li>Salesforce Supported Virtual Internship Program (2025)</li>
+<li>BSIT Community Extension Trainings (2024)</li>
+</ul>
 
-<a href="resume.pdf">
-Download Resume
-</a>
+</div>
 
 </section>
 
-<hr>
-    
-<h2>Recommendation Letter</h2>
+<section id="achievements">
 
-<a href="recommendation-letter.pdf">
-View Recommendation Letter
+<h2>Achievements & Awards</h2>
+
+<div class="card">
+
+<ul>
+<li>3rd Place - Hacksprint Competition (ITO FEST 2026)</li>
+<li>Research Presenter - OJT Monitoring System (PUP Research Colloquium 2025)</li>
+<li>Resource Speaker - ITUTOR Python Session (2024)</li>
+<li>Best Editor - CinemaLayan Film Festival (2024)</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="resume">
+
+<h2>Resume & Documents</h2>
+
+<div class="card">
+
+<p>
+Download my professional documents:
+</p>
+
+<p>
+<a class="btn" href="resume.pdf">
+Download Resume
 </a>
-    
+</p>
+
+<p>
+<a class="btn" href="recommendation-letter.pdf">
+Recommendation Letter
+</a>
+</p>
+
+</div>
+
+</section>
+
 <section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email: raejohncarandang121303@gmail.com</p>
+<div class="card">
 
-<p>Phone: +639052388382</p>
+<p>
+📧 Email:
+<a href="mailto:raejohncarandang121303@gmail.com">
+raejohncarandang121303@gmail.com
+</a>
+</p>
+
+<br>
+
+<p>
+📱 Phone:
++63 905 238 8382
+</p>
+
+<br>
+
+<p>
+GitHub:
+<a href="https://github.com/yourusername">
+github.com/yourusername
+</a>
+</p>
+
+<br>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/yourprofile">
+linkedin.com/in/yourprofile
+</a>
+</p>
+
+</div>
 
 </section>
+
+<footer>
+
+<p>
+© 2026 Rae John Carandang. All Rights Reserved.
+</p>
+
+</footer>
 
 </body>
 </html>
